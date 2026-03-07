@@ -1,0 +1,23 @@
+# Rust
+/target/
+Cargo.lock
+**/*.rs.bk
+*.rlib
+*.rmeta
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+*.iml
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log

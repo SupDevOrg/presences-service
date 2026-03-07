@@ -1,0 +1,29 @@
+[package]
+name = "presence-service"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "presence-service"
+path = "src/main.rs"
+
+[dependencies]
+# Web framework
+axum = { version = "0.7", features = ["ws", "macros"] }
+tokio = { version = "1", features = ["full"] }
+tower = "0.4"
+hyper = { version = "1", features = ["full"] }
+
+# Redis
+redis = { version = "0.25", features = ["aio", "tokio-comp", "connection-manager"] }
+
+# JWT Authentication
+jsonwebtoken = "9"
+
+# Serialization & Utils
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = { version = "0.4", features = ["serde"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+futures-util = "0.3"
