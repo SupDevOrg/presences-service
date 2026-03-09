@@ -389,6 +389,6 @@ Solution: Verify TTL is set correctly (should be 30s)
 Part of the Sup platform
 
 ## Support
-No support for this module
+No support for this module yet
 
 For issues and questions, contact the backend team or check the Sup platform documentation.
